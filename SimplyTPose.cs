@@ -4,7 +4,7 @@ using UnityEngine;
 using ComfyUtils;
 using VRC;
 
-[assembly: MelonInfo(typeof(SimplyTPose.SimplyTPose), "SimplyTPose", "0.1", "Boppr")]
+[assembly: MelonInfo(typeof(SimplyTPose.SimplyTPose), "SimplyTPose", "0.2", "Boppr")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 namespace SimplyTPose
@@ -37,7 +37,7 @@ namespace SimplyTPose
             {
                 try
                 {
-                    Animator animator = PlayerManager.field_Private_Static_PlayerManager_0.field_Private_Player_0.transform.Find("ForwardDirection").Find("Avatar").GetComponent<Animator>();
+                    Animator animator = Player.prop_Player_0.transform.Find("ForwardDirection").Find("Avatar").GetComponent<Animator>();
                     animator.enabled = !animator.enabled;
                 }
                 catch { }
