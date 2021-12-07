@@ -37,7 +37,7 @@ namespace SimplyTPose
             {
                 try
                 {
-                    Animator animator = Player.prop_Player_0.transform.Find("ForwardDirection").Find("Avatar").GetComponent<Animator>();
+                    Animator animator = Player.prop_Player_0._vrcplayer.field_Internal_Animator_0;
                     animator.enabled = !animator.enabled;
                 }
                 catch { }
