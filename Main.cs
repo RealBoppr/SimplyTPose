@@ -4,7 +4,7 @@ using UnityEngine;
 using ComfyUtils;
 using VRC;
 
-[assembly: MelonInfo(typeof(SimplyTPose.SimplyTPose), "SimplyTPose", "0.2", "Boppr")]
+[assembly: MelonInfo(typeof(SimplyTPose.Main), "SimplyTPose", "0.2", "Boppr")]
 [assembly: MelonGame("VRChat", "VRChat")]
 
 namespace SimplyTPose
@@ -14,7 +14,7 @@ namespace SimplyTPose
         public string PressKeyBind { get; set; } = "T";
         public string HoldKeyBind { get; set; } = "LeftAlt";
     }
-    public class SimplyTPose : MelonMod
+    public class Main : MelonMod
     {
         private static Config Config => Helper.Config;
         private static ConfigHelper<Config> Helper;
